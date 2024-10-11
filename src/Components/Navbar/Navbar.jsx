@@ -5,13 +5,13 @@ const Navbar = () => {
   return (
     <div>
         <header>
-            <div className="container">
+            <div className="container py-5 flex  items-center justify-between">
                 {/*Logo Section*/}
                 <div>
                     <img src={Logo} alt="" className="w-48" />
                 </div>
                 {/* Navlinks section */}
-                <ul>
+                <ul className="hidden md:flex text-center gap-10 md:text-base text-sm">
                     <li>
                         <a href="#">
                             Products
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 {/*Button Section*/}
-                <button>
+                <button className="border border-gray-400 px-4 py-2 rounded-lg hover:bg-primary hover:text-white transform duration-300">
                     {" "}
                     Get in touch
                 </button>

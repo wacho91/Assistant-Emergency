@@ -1,3 +1,4 @@
+import Footer from "./Components/Footer/Footer"
 import Hero from "./Components/Hero/Hero"
 import HowItHelps from "./Components/HowItHelps/HowItHelps"
 import Navbar from "./Components/Navbar/Navbar"
@@ -14,6 +15,7 @@ function App() {
       <HowItHelps />
       <Uses />
       <Trust />
+      <Footer />
     </main>
   )
 }

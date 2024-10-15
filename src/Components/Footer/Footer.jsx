@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 const Footer = () => {
   return (
-    <div>
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <div className="container py-20 flex flex-col md:flex-row md:items-center justify-between gap-10">
             {/*Brand Info*/}
             <div className="space-y-4">
@@ -24,7 +24,7 @@ const Footer = () => {
                 <FaLinkedin className="hover:text-primary duration-200" />
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

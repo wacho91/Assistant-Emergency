@@ -1,10 +1,16 @@
 
 import Logo from "../../assets/logo.png"
 
+import { motion } from "framer-motion"
+
 const Navbar = () => {
   return (
     <div>
-        <header>
+        <motion.header 
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+        >
             <div className="container py-5 flex  items-center justify-between">
                 {/*Logo Section*/}
                 <div>
@@ -39,7 +45,7 @@ const Navbar = () => {
                     Get in touch
                 </button>
             </div>
-        </header>
+        </motion.header>
     </div>
   )
 }
